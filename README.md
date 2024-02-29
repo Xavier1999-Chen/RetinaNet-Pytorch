@@ -2,7 +2,7 @@
 ## Quick start
 Clone this repository:
 ```
-git clone 
+git clone https://github.com/Xavier1999-Chen/RetinaNet-Pytorch.git
 ```
 
 Pull an docker image is the most fast and stable way to get the running environment:
