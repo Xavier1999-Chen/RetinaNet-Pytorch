@@ -7,12 +7,14 @@ git clone https://github.com/Xavier1999-Chen/RetinaNet-Pytorch.git
 
 Pull an docker image is the most fast and stable way to get the running environment:
 ```
-docker pull 
+docker pull xavier1999/retinanet-pytorch:v1.0
 ```
 
 Then, use the following cml to create a container:
 ```
-docker run -it --net=host --name=retinanet -v /YOUR/LOCAL/PATH/to/THIS/REPOSITORY:/workspace -v /tmp/.X11-unix:/tmp/.X11-unix -v /dev:/dev -e DISPLAY=$DISPLAY pytorch/pytorch
+docker run -it --net=host --name=retinanet -v /YOUR/LOCAL/PATH/to/THIS/REPOSITORY:/workspace \
+               -v /tmp/.X11-unix:/tmp/.X11-unix -v /dev:/dev -e DISPLAY=$DISPLAY \
+               xavier1999/retinanet-pytorch:v1.0
 ```
 
 Now you can access the container to train and test your RetinaNet :)
